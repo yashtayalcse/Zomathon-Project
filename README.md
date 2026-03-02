@@ -40,7 +40,7 @@ Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on
 
 ## 🚀 Performance Metrics
 
-*Optimized via **Tuned CatBoost** & Validated with **10-Fold Rolling Time-Series CV**.*
+*Optimized via **Tuned CatBoost** & Validated with **5-Fold Rolling Time-Series CV**.*
 
 | Metric | Zomato Baseline | Our Enriched Model |
 | --- | --- | --- |
