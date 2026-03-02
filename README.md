@@ -1,80 +1,59 @@
 Team: The Outliers
 
-### **Zomathon 2026: The "Deep-Kitchen" KPT Framework**
+# Deep-Kitchen KPT Engine
 
-**Precision ETA via 18-Signal Enrichment & Merchant De-biasing**
+### *Precision ETA via 18-Signal Enrichment & Merchant De-biasing*
 
----
+## ⚡ The Quick Pitch
 
-#### **1. Executive Summary: The Core Problem**
+Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on **Biased Merchant Signals** (FOR button), leading to riders waiting idly. We built a **Digital Twin** that models kitchen physics to predict the *real* handover time.
 
-Standard Kitchen Prep Time (KPT) models fail due to **Merchant Signal Noise**. To avoid late-delivery penalties, merchants often click the "Food Ready" (FOR) button prematurely.
+## 📊 Proprietary Dataset
 
-* **The Result:** Riders are dispatched too early, leading to idle waiting at the gate.
-* **The Cost:** Thousands of fleet-wide rider-hours are lost daily.
-* **The Blindspot:** Traditional systems lack visibility into **Dine-in Load** (offline customers) and internal kitchen friction.
+* **Scale:** **31,000+ Unique Orders** (Self-curated for high variance).
+* **Feature Depth:** **18 Custom Signals** (Environmental + Psychological + Physical).
+* **Data Integrity:** Chronological sorting to ensure **Zero Data Leakage**.
 
----
+## 🛠 The 18-Signal Architecture (The "Juicy" Part)
 
-#### **2. The Proprietary Dataset**
+### 🧩 Layer 1: The "Hidden" Stress Signals
 
-*Unlike baseline models, this framework is trained on a high-fidelity "Digital Twin" of Zomato’s kitchen clusters:*
-
-* **Scale:** **31,000+ Unique Orders** (Custom-engineered for high variance).
-* **Dimensionality:** **18 Intelligence Signals** capturing environmental, psychological, and physical friction.
-* **Data Integrity:** Chronologically sorted to ensure **Zero Data Leakage**.
-
----
-
-#### **3. The 18-Signal Intelligence Architecture**
-
-We move beyond simple history by modeling **Kitchen Physics** through four specialized layers:
-
-**A. Real-Time "Hidden" Load**
-
-* **Dine-in Crowd Proxy:** WiFi sensing signals to detect non-Zomato customers in the vicinity.
-* **Rush Window Bucket:** A dynamic ratio of live order volume vs. active chef capacity.
+* **WiFi Crowd Proxy:** Uses signal strength to "see" dine-in customers Zomato misses.
+* **Rush Window Bucket:** Live ratio of order velocity vs. kitchen bandwidth.
 * **Pending Queue:** Real-time backlog tracking of the live kitchen stack.
 
-**B. Operational & Psychological Friction**
+### 🧠 Layer 2: The "Chef Psychology" Signals
 
-* **Context-Switch Penalty:** (**Our Innovation**) Measures the cognitive delay caused by chefs switching between diverse dish types.
-* **Packaging Complexity:** Scoring based on dish state (e.g., liquids/gravies require spill-proof sealing time).
-* **Instruction Friction:** NLP-derived index scanning for high-effort "Special Instructions."
+* **Context-Switch Penalty:** (**Our Innovation**) Measures the cognitive delay when a chef switches between diverse dish types.
+* **Instruction Friction:** NLP-derived index for "Customization" keywords that break kitchen rhythm.
+* **Packaging Complexity:** Scoring based on dish state (Liquids/Gravies require +X mins for sealing).
 
-**C. Geospatial & Atmospheric Signals**
+### 🌍 Layer 3: Geospatial & Atmospheric Signals
 
-* **Vertical Transit Cost:** Models the "Mall Floor Delay"—time spent in elevators or stairs for high-rise restaurants.
-* **Weather Impact:** Humidity and Rain intensity factored into cooking speed and handover friction.
+* **Vertical Transit Cost:** Predicts the "Mall Floor Delay"—time spent in elevators/stairs.
+* **Weather Impact:** Humidity and Rain intensity factored into frying times and hand-off friction.
 
-**D. Merchant Trust Layer**
+### ⚓ Layer 4: The Anchor Signals
 
 * **Past KPT Baseline:** 30-day "Normal" anchor for specific store/time slots.
-* **Merchant Reputation:** A de-biasing score to penalize "Early-Button Clickers" based on historical trends.
+* **Merchant Reputation:** A de-biasing score to penalize "Early-Button Clickers."
 
----
+## 🚀 Performance Metrics
 
-#### **4. Model Performance & Evaluation**
+*Optimized via **Tuned CatBoost** & Validated with **10-Fold Rolling Time-Series CV**.*
 
-We utilized a **Tuned CatBoost Regressor** for its symmetric tree stability and superior handling of categorical data (Store IDs).
+| Metric | Zomato Baseline | Our Enriched Model |
+| --- | --- | --- |
+| **MAE (Minutes)** | ~3.50 min | **~2.20 min** |
+| **Reliability** | Fails during Rush | **Stable & Consistent** |
+| **Error Reduction** | 0.00 min | **-37.1% Improvement** |
 
-| Metric | Baseline (Merchant Signal) | Our Enriched Model | % Improvement |
-| --- | --- | --- | --- |
-| **MAE (Minutes)** | ~3.50 min | **~2.20 min** | **~37%** |
-| **Peak Reliability** | Spikes during Rush | **Stable & Reliable** | **+25% Accuracy** |
-
-* **Tuning:** Optimized via `RandomizedSearchCV` for L2 Regularization.
-* **Validation:** Verified through **10-Fold Rolling Time-Series Cross-Validation**.
-
----
-
-#### **5. Business Impact (Scaled to 100k Daily Orders)**
+## 💰 Business Impact (At 100k Daily Orders)
 
 * **Fleet Efficiency:** **~685.07 Rider Hours/Day** reclaimed from idle waiting.
-* **Efficiency Gain:** **0.41 minutes** average reduction in error per order.
-* **Strategic Outcome:** Higher "Trips per Hour" for riders and a significant reduction in "Cold Food" complaints due to precision dispatching.
+* **Rider Experience:** Massive reduction in "Gate Waiting" time.
+* **Customer UX:** Hotter food delivery through precision dispatching.
 
 ---
 
 **"We don't just predict the time; we model the friction."**
-*Submission for Zomathon 2026 | Problem Statement 1 | Team Yash*
