@@ -44,9 +44,9 @@ Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on
 
 | Metric | Zomato Baseline | Our Enriched Model |
 | --- | --- | --- |
-| **MAE (Minutes)** | ~3.50 min | **~2.20 min** |
+| **MAE (Minutes)** | ~3.55 min | **~3.14 min** |
 | **Reliability** | Fails during Rush | **Stable & Consistent** |
-| **Error Reduction** | 0.00 min | **-37.1% Improvement** |
+| **Error Reduction** | 0.00 min | **11.57% Improvement** |
 
 ## 💰 Business Impact (At 100k Daily Orders)
 
