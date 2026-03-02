@@ -14,7 +14,7 @@ Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on
 * **Feature Depth:** **18 Custom Signals** (Environmental + Psychological + Physical).
 * **Data Integrity:** Chronological sorting to ensure **Zero Data Leakage**.
 
-## 🛠 The 18-Signal Architecture (The "Juicy" Part)
+## 🛠 The 18-Signal Architecture
 
 ### 🧩 Layer 1: The "Hidden" Stress Signals
 
