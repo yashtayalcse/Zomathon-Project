@@ -1,6 +1,7 @@
 # KPT Engine
 
 **Dataset Used:** [Kaggle - Food Delivery Order History Data](https://www.kaggle.com/datasets/sujalsuthar/food-delivery-order-history-data)
+**PPT Canva Link:** [Link](https://canva.link/aiualw1falibmhh)
 
 Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on **Biased Merchant Signals** (FOR button), leading to riders waiting idly. We built a **Digital Twin** that models kitchen physics to predict the *real* handover time.
 
