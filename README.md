@@ -1,10 +1,6 @@
-Team: The Outliers
+# KPT Engine
 
-# Deep-Kitchen KPT Engine
-
-### *Precision ETA via 18-Signal Enrichment & Merchant De-biasing*
-
-## ⚡ The Quick Pitch
+**Dataset Used:** [Kaggle - Food Delivery Order History Data](https://www.kaggle.com/datasets/sujalsuthar/food-delivery-order-history-data)
 
 Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on **Biased Merchant Signals** (FOR button), leading to riders waiting idly. We built a **Digital Twin** that models kitchen physics to predict the *real* handover time.
 
@@ -43,7 +39,7 @@ Standard KPT models are "blind" to the internal chaos of a kitchen. They rely on
 *Optimized via **Tuned CatBoost** & Validated with **5-Fold Rolling Time-Series CV**.*
 
 | Metric | Zomato Baseline | Our Enriched Model |
-| --- | --- | --- |
+| :--- | :--- | :--- |
 | **MAE (Minutes)** | ~3.55 min | **~3.14 min** |
 | **Reliability** | Fails during Rush | **Stable & Consistent** |
 | **Error Reduction** | 0.00 min | **11.57% Improvement** |
